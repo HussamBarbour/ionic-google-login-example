@@ -99,7 +99,7 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-googleplus" source="npm">
-        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.861868653127-i2tdp8e3uhh0u32csp777ju2moigo84c" />
-        <variable name="WEB_APPLICATION_CLIENT_ID" value="861868653127-i2tdp8e3uhh0u32csp777ju2moigo84c.apps.googleusercontent.com" />
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.xxxxxxx" />
+        <variable name="WEB_APPLICATION_CLIENT_ID" value="xxxxxx.apps.googleusercontent.com" />
     </plugin>
 </widget>
