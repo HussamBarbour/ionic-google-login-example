@@ -1,20 +1,37 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Google Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content [fullscreen]="true"  class="ion-padding">
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button expand="block" color="danger" (click)="googleLogin()">Google Login <ion-icon name="logo-google"></ion-icon></ion-button>
+    <ion-button expand="block" color="danger" (click)="googleLogout()">Google Logout <ion-icon name="logo-google"></ion-icon></ion-button>
+    <ion-button expand="block" color="danger" (click)="disconnect()">Google Disconnect <ion-icon name="logo-google"></ion-icon></ion-button>
+    <ion-list *ngIf="data">
+      <ion-list-header>
+        <ion-label>displayName</ion-label>
+      </ion-list-header>
+      <ion-item>{{data.displayName}}</ion-item>
+      <ion-list-header>
+        <ion-label>email</ion-label>
+      </ion-list-header>
+      <ion-item>{{data.email}}</ion-item>
+      <ion-list-header>
+        <ion-label>givenName</ion-label>
+      </ion-list-header>
+      <ion-item>{{data.givenName}}</ion-item>
+      <ion-list-header>
+        <ion-label>familyName</ion-label>
+      </ion-list-header>
+      <ion-item>{{data.familyName}}</ion-item>
+      <ion-list-header>
+        <ion-label>image</ion-label>
+      </ion-list-header>
+      <ion-item><ion-img [src]="data.imageUrl"></ion-img></ion-item>
+    </ion-list>
   </div>
 </ion-content>
